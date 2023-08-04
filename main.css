@@ -224,7 +224,7 @@ small{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 15px;
 }
 .footer-contents a{
     margin-bottom: 10px;
@@ -246,21 +246,8 @@ small{
 }
 
 /* media query */
-
 @media only screen and (max-width:600px) {
-    /* .hero{
-        background-size: cover;
-        background-position: center;
-        background-repeat: repeat;
-        position: relative;
-        background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(./images/header.png);
-        width: 100vw;
-        height: 100vh;
-        display: flex;
-        flex-direction: column;
-        padding: none;
-        align-items: center;
-    } */
+
     .header{
         width: 100%;
         padding: 0 5px;
@@ -294,6 +281,9 @@ small{
     .bodies{
         display: flex;
         flex-direction: column;
+    }
+    .body-content{
+        width: 100%;
     }
     .two{
         flex-direction: column-reverse !important;
@@ -329,6 +319,19 @@ small{
             height: 100vh;
             background-repeat: no-repeat;
             background-size: cover;
+        }
+        .body-image{
+            order: 1 !important;
+            width: 100%;
+        }
+    }
+    @media screen and (max-width:298px) {
+        .header-content{
+            position: absolute;
+            bottom: 50px;
+        }
+        .write-up h1{
+            text-align: center !important;
         }
     }
 }
