@@ -83,7 +83,7 @@ input{
     color: rgb(170, 170, 170);
     padding: 20px;
     border-radius: 5px;
-    width: 400px;
+    /* width: 400px; */
     font-size: 18px;
 }
 .get-started{
@@ -93,10 +93,10 @@ input{
     color: #fff;
     border-radius: 8px;
     border: none;
-    padding: 18px;
+    padding: 18px 25px;
     transition: all 0.5s;
     cursor: pointer;
-    width: 200px;
+    /* width: 200px; */
     margin-left: 5px;
 }
 .get-started:hover{
@@ -199,6 +199,10 @@ small{
 }
 .faq-buttons{
     margin-top: 12px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    justify-content: center;
 }
 .footer{
     border-top: 7px solid rgb(59, 59, 59, 0.4); 
@@ -219,10 +223,112 @@ small{
 .footer-contents{
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
 }
 .footer-contents a{
     margin-bottom: 10px;
 }
 .heads li{
     margin-bottom: 30px;
+}
+.footer .language-btn{
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 3px;
+    border: 1px solid #fff;
+    background: transparent;
+    cursor: pointer;
+    margin-top: 20px;
+}
+.language-btn i{
+    margin-left: 8px;
+}
+
+/* media query */
+
+@media only screen and (max-width:600px) {
+    /* .hero{
+        background-size: cover;
+        background-position: center;
+        background-repeat: repeat;
+        position: relative;
+        background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(./images/header.png);
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        padding: none;
+        align-items: center;
+    } */
+    .header{
+        width: 100%;
+        padding: 0 5px;
+    }
+    .header-content{
+        text-align: center;
+        height: 80vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 50px;
+    }
+    .email{
+        width: 85%;
+        margin-bottom: 20px;
+    }
+
+    .header-content{
+        position: unset;
+        transform: none;
+        padding-top: 150px;
+    }
+    .header-content h1{
+        font-size: 30px;
+    }
+    .header-buttons button, .header-buttons input{
+        font-size: 12px;
+        padding: 10px 15px;
+    }
+    .bodies{
+        display: flex;
+        flex-direction: column;
+    }
+    .two{
+        flex-direction: column-reverse !important;
+    }
+    .write-up, .body-image{
+        flex-basis: 100%;
+        margin: 10px 0;
+    }
+    .write-up h1{
+        font-size: 30px;
+    }
+    .write-up p{
+        font-size: 15px;
+    }
+    .faq h2{
+        font-size: 20px;
+    }
+    .accordion .content{
+        font-size: 14px;
+    }
+    .accordion li label{
+        padding: 10px;
+        font-size: 14px;
+    }
+    label::after{
+        font-size: 22px;
+    }
+    @media screen and (max-width:450px) {
+        .hero{
+            /* border: 3px solid yellow; */
+            display: flex;
+            width: 100vw;
+            height: 100vh;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    }
 }

@@ -1,23 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign-up</title>
     <link rel="stylesheet" href="./sign-up.css">
 </head>
+
 <body>
 
     <section class="hero">
         <div class="image"> <img src="./images/netflix.png" alt=""></div>
         <div class="hero-content">
             <div class="sign-up">
-                <header>Sign In</header>
-                <input type="email" name="email" placeholder="Email or phone number">
-                <input type="password" name="password" placeholder="Password">
+                <h1>Sign In</h1>
+                <input type="email" name="email" placeholder="Email or phone number" class="email">
+                <input type="password" name="password" placeholder="Password" class="password">
+                <button class="sign">Sign In</button>
+                <label>
+                    <div class="check">
+                        <input type="checkbox" class="checkboxs" />
+                        <span class="checkbox"></span>
+                        <p>Remember me</p>
+                    </div>
+                    <div class="check-down">
+                        <p>Need help?</p>
+                    </div>
+                </label>
+
+                <div class="sign-up-down">
+                    <div class="top">
+                        <p>New To Netflix?</p>
+                        <span><a href="./index.html">Sign up now</a></span>
+                    </div>
+                    <div class="down">
+                        <p>This page is protected by Google reCAPTCHA to<br>ensure you are not a bot. <a href="">Learn more</a></p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
-    
+
 </body>
+
 </html>
